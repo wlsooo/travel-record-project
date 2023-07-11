@@ -1,0 +1,78 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+:root {
+    /* color */
+    --first-color: #458BE0;
+    --second-color: #254FA3;
+
+    /* font */
+    --logo-font: "Lora", serif;
+    --body-font: "Nanum Gothic", serif;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;   /* 16px */
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+}
+body {
+    font-family: var(--body-font);
+}
+header {
+    background-color: var(--second-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav {
+    height: 44px;
+}
+
+@media screen and (min-width:0px) {   
+    .nav.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        padding: 0 16px;
+    }
+    .nav.container a {
+        color: #fff;
+    }
+    .nav-list {
+        font-weight: var(--font-regular);
+        position: absolute;
+        top: 44px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: var(--second-color);
+        overflow: hidden;
+        transition: 0.4s;
+        height: 0;
+    }
+    .nav-link {
+        display: block;
+    }
+    .nav-item {
+        padding: 1em 0;
+    }
+    .nav-toggle {
+        font-size: var(--h3-font-size);
+    }
+    .nav-logo {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: var(--font-bold);
+        font-family: var(--logo-font);
+        font-size: var(--h2-font-size);
+    }
+    .show-menu {
+        height: 156px;
+    }
+}
