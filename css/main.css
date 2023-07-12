@@ -1,5 +1,6 @@
 :root {
-    --body-font: "Nanum Gothic", serif;
+    --first-body-font: "Nanum Gothic", serif;
+    --second-body-font: "Noto Sans KR", serif;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -11,9 +12,9 @@
     --font-extra-bold: 800;
 }
 body {
-    font-family: var(--body-font);
+    font-family: var(--second-body-font);
     font-size: 22px;
-    font-weight: var(--font-bold);
+    font-weight: var(--font-extra-bold);
     color: #fff;
 }
 main{

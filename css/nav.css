@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
 :root {
     /* color */
@@ -8,7 +8,8 @@
 
     /* font */
     --logo-font: "Lora", serif;
-    --body-font: "Nanum Gothic", serif;
+    --first-body-font: "Nanum Gothic", serif;
+    --second-body-font: "Noto Sans", serif;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -16,11 +17,12 @@
     --small-font-size: 0.8rem;
     --smaller-font-size: 0.6rem;
     --font-regular: 400;
+    --font-medium: 500;
     --font-bold: 700;
     --font-extra-bold: 800;
 }
 body {
-    font-family: var(--body-font);
+    font-family: var(--second-body-font);
 }
 header {
     background-color: var(--second-color);
@@ -75,6 +77,6 @@ nav {
         font-size: var(--h2-font-size);
     }
     .show-menu {
-        height: 156px;
+        height: 165px;
     }
 }
